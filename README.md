@@ -5,7 +5,7 @@ VERSION="6.12.48"
 wget "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$VERSION.tar.xz"
 tar -xf "linux-$VERSION.tar.xz"
 cd "linux-$VERSION"
-make oldefconfig
+make oldconfig
 make prepare
 wget -O ../0001-cachyos-base-all.patch "https://raw.githubusercontent.com/cachyos/kernel-patches/master/6.12/all/0001-cachyos-base-all.patch"
 wget -O ../0001-bore-cachy.patch "https://raw.githubusercontent.com/cachyos/kernel-patches/master/6.12/sched/0001-bore-cachy.patch"
